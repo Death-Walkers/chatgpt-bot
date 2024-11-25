@@ -28,8 +28,8 @@ async def startcmd(client, message):
         )
     if FSUB and not await get_fsub(client, message):return
     await message.reply_photo(
-        photo="https://telegra.ph/file/595e38a4d76848c01b110.jpg",
-        caption=f"<b>Jai Shree Krishna {userMention},\n\nIᴍ Hᴇʀᴇ Tᴏ Rᴇᴅᴜᴄᴇ Yᴏᴜʀ Pʀᴏʙʟᴇᴍs..\nYᴏᴜ Cᴀɴ Usᴇ Mᴇ As ʏᴏᴜʀ Pʀɪᴠᴀᴛᴇ Assɪsᴛᴀɴᴛ..\nAsᴋ Mᴇ Aɴʏᴛʜɪɴɢ...Dɪʀᴇᴄᴛʟʏ..\n\nMʏ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/biisal>Bɪɪsᴀʟ</a>\nMʏ Lᴏᴠᴇʀ : <a href=tg://settings/>Tʜɪs Pᴇʀsᴏɴ</a></b>",
+        photo="https://ar-hosting.pages.dev/1732542988089.jpg",
+        caption=f"<b>ʜᴇʏ ᴅᴇᴀʀ {userMention},\n\nIᴍ Hᴇʀᴇ Tᴏ Rᴇᴅᴜᴄᴇ Yᴏᴜʀ Pʀᴏʙʟᴇᴍs..\nYᴏᴜ Cᴀɴ Usᴇ Mᴇ As ʏᴏᴜʀ Pʀɪᴠᴀᴛᴇ Assɪsᴛᴀɴᴛ..\nAsᴋ Mᴇ Aɴʏᴛʜɪɴɢ...Dɪʀᴇᴄᴛʟʏ..\n\n❣️ᴜᴘᴅᴀᴛᴇ: <a href=https://t.me/Ashlynn_Repository> Asʜʟʏɴɴ Rᴇᴘᴏsɪᴛᴏʀʏ</a>\n🧠ʜᴏsᴛᴇᴅ: <a href=https://cloud.seenode.com/>sᴇᴇɴᴏᴅᴇ</a></b>",
     )
     return
 
@@ -51,12 +51,12 @@ async def broadcasting_func(client, message):
         if not user_id:
             continue
         try:
-            await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/bisal_files_talk')]]))
+            await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/Ashlynn_Repository')]]))
             completed += 1
         except FloodWait as e:
             if isinstance(e.value , int | float):
                 await asyncio.sleep(e.value)
-                await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/bisal_files_talk')]]))
+                await to_copy_msg.copy(user_id , reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ 🎗️", url='https://t.me/Ashlynn_Repository')]]))
                 completed += 1
         except Exception as e:
             print("Error in broadcasting:", e) 
@@ -74,7 +74,7 @@ async def grp_ai(client: Client, message: Message):
     )
     if not query:
         return await message.reply_text(
-            "<b>Abe gadhe /ai k baad kuch likh to le !!.\n\nExample Use:\n<code>/ai Who is lord krshna??</code>\n\nHope you got it.Try it now..</b>"
+            "<b>Example Use:\n<code>/ai Who is lord krshna??</code>\n\nHope you got it.Try it now..</b>"
         )
     if FSUB and not await get_fsub(client, message):return
     message.text = query # type:ignore
